@@ -1,4 +1,4 @@
-<%@ page contentType = "text/html;charset=utf-8" %>
+<%@ page contentType = "text/html; charset=utf-8" %>
 	<nav class="navbar navbar-expand  navbar-dark bg-dark">
 		<div class="dropdown">
   		<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
