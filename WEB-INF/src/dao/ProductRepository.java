@@ -27,7 +27,7 @@ public class ProductRepository {
 		tablet.setManufacturer("Samsung");
 		tablet.setUnitsInStock(1000);
 		tablet.setCondition("Old");
-		
+        		
 		// 위와 같이 상품 초기화 하고 아래에 상품을 추가
 
 		listOfProducts.add(phone);
@@ -35,8 +35,20 @@ public class ProductRepository {
 		listOfProducts.add(tablet);
 		// listOfProducts.add(상품명);
 	}
-
-	public ArrayList<Product> getAllProducts() {
+    
+    public ArrayList<Product> getAllProducts() {
 		return listOfProducts;
+    }
+        
+	public Product getProductById(String productId) {
+		Product productById = null;
+
+		for (int i = 0; i < listOfProducts.size(); i++) {
+			Product product = listOfProducts.get(i);
+			if (product != null && product.getProductId() != null && product.getProductId().equals(productId)) {
+				productById = product;
+				break;
+			}
+		}
+		return productById;
 	}
-}
