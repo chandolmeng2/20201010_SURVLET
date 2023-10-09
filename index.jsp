@@ -2,6 +2,8 @@
 <head>
     <%@page contentType="text/html; charset=utf-8"%>
     <%@page import="java.util.Date"%>
+    <%@page buffer = "1kb" autoFlush="true"%>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
           crossorigin="anonymous">
@@ -28,6 +30,9 @@
         <%@ include file = "top_menu.jsp"%>
         <%@ include file = "body_main.jsp"%>
         <%@ include file = "footer.jsp"%>
+        
+        현재 페이지 버퍼 용량 : <%= out.getBufferSize() %> <br>
+        남은 페이지 버퍼 용량 : <%= out.getRemaining() %>
     </body>
 </html>
 	
