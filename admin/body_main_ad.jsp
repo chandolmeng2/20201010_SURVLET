@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="dto.Product"%>
-<jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
+<%@ page import="dao.ProductRepository"%>
 
 	<%! String greeting = "현재 페이지는 VGA 그래픽 카드 상품 목록입니다.";
       String tagline = "하단 페이지 : 확인";%>
@@ -14,7 +14,8 @@
 		</div>
 	</div>
 <%
-	ArrayList<Product> listOfProducts = productDAO.getAllProducts(); // 리스트에 상품 전체 정보를 얻어온다.
+    ProductRepository dao = ProductRepository.getInstance();
+	ArrayList<Product> listOfProducts = dao.getAllProducts(); // 리스트에 상품 전체 정보를 얻어온다.
 %>
     <div class="container">
 		<div class="row" align="center">
@@ -24,7 +25,7 @@
 			%>
 			<div class="col-md-4">
                     <div class="card bg-dark text-white">
-                        <img src = "image/product/<%=product.getProductId()%>.jpg" class="card-img" alt="...">
+                        <img src = "../image/product/<%=product.getFilename()%>" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-title">그래픽 카드 이미지 샘플</h5>
                             <p class="card-text">
@@ -36,7 +37,7 @@
 				<p><%=product.getDescription()%><!--상품정보-->
 				<p><%=product.getUnitPrice()%>원<!--상품가격-->
                 <p>
-                    <a href="product_detail.jsp?id=<%=product.getProductId()%>" class="btn btn-secondary" role = "button"> 상품 상세 정보 &raquo;</a>
+                    <a href="product_detail_ad.jsp?id=<%=product.getProductId()%>" class="btn btn-secondary" role = "button"> 상품 상세 정보 &raquo;</a>
                 </p>
 			</div>
 			<%
@@ -56,7 +57,7 @@
 	</div>
 
 <div class="card bg-dark text-white">
-        <img src = "image\title.png" class = "card-img" alt = "...">
+        <img src = "../image\title.png" class = "card-img" alt = "...">
     <div class = "card-img-overlay">
         <h5 class = "card_title" >그래픽 카드 이벤트</h5>
         <p class="card_text">출처:다나와</p>

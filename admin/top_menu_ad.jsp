@@ -21,20 +21,17 @@
 	</div>
     
     <div>
-        <img src="image\main.png" class="img-fluid" alt="main_image">
+        <img src="../image\main.png" class="img-fluid" alt="main_image">
     </div>
 
         <div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="./index.jsp">자동차</a>
-                <a class="navbar-brand" href="./index.jsp">조립PC</a>
-                <a class="navbar-brand" href="./index.jsp">PC견적</a>
-                <a class="navbar-brand" href="./index.jsp">기업구매상담</a>
-                <a class="navbar-brand" href="./index.jsp">여행</a>
-                <a class="navbar-brand" href="./index.jsp">쇼핑기획전</a>
-                <a class="navbar-brand" href="./index.jsp">DPG</a>
-                <a class="navbar-brand" href="./index.jsp">이벤트/체험단</a>
-                <a class="navbar-brand" href="admin/index_ad.jsp">관리자모드</a>
+				<a class="navbar-brand" href="./index.jsp">메뉴바 : 홈페이지</a>
+                <a class="navbar-brand" href="./index.jsp">회원 보기/추가/수정/삭제 </a>
+                <a class="navbar-brand" href="index_ad.jsp">상품 보기</a>
+                <a class="navbar-brand" href="product_add.jsp">등록</a>
+                <a class="navbar-brand" href="index_ad.jsp">수정/삭제</a>
+                <a class="navbar-brand" href="..//index.jsp">일반모드</a>
 			</div>
 		</div>
 	</nav>
