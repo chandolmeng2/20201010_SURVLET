@@ -56,7 +56,7 @@
 	</div>
 
 <div class="card bg-dark text-white">
-        <img src = "image\title.png" class = "card-img" alt = "...">
+        <img src = "admin/image/title.png" class = "card-img" alt = "...">
     <div class = "card-img-overlay">
         <h5 class = "card_title" >그래픽 카드 이벤트</h5>
         <p class="card_text">출처:다나와</p>

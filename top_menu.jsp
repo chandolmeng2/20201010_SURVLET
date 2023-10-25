@@ -21,7 +21,7 @@
 	</div>
     
     <div>
-        <img src="image\main.png" class="img-fluid" alt="main_image">
+        <img src="admin/image/main.png" class="img-fluid" alt="main_image">
     </div>
 
         <div class="container">
