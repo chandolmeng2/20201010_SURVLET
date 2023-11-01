@@ -21,7 +21,7 @@
 	</div>
     
     <div>
-        <img src="admin/image/main.png" class="img-fluid" alt="main_image">
+        <img src="../admin/image/main.png" class="img-fluid" alt="main_image">
     </div>
 
         <div class="container">
@@ -34,7 +34,7 @@
                 <a class="navbar-brand" href="./index.jsp">쇼핑기획전</a>
                 <a class="navbar-brand" href="./index.jsp">DPG</a>
                 <a class="navbar-brand" href="./index.jsp">이벤트/체험단</a>
-                <a class="navbar-brand" href="admin/index_ad.jsp">관리자모드</a>
+                <a class="navbar-brand" href="../admin/index_ad.jsp">관리자모드</a>
 			</div>
 		</div>
 	</nav>

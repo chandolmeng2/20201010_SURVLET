@@ -21,7 +21,7 @@
 	<jsp:include page="../top_menu.jsp" />
 	<div class="jumbotron">
 		<div class="container">
-			<h1 class="display-3">상품 등록 페이지 접근 - 로그인이 필요합니다.</h1>
+			<h1 class="display-3">관리자 모드 접근 - 로그인이 필요합니다.</h1>
 		</div>
 	</div>
 	<div class="container" align="center">

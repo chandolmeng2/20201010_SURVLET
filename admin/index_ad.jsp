@@ -20,7 +20,7 @@
             crossorigin="anonymous">
     </script>
     <script>
-        window.open("popup/popup1.jsp", "popup","width=365,height=250, left=0, top=0")
+        window.open("../popup/popup1.jsp", "popup","width=365,height=250, left=0, top=0")
     </script>
     
 <title>반갑습니다. 개인 쇼핑물 사이트입니다.</title>

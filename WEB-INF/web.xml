@@ -2,18 +2,18 @@
 <web-app>
 	<security-role>
 		<description></description >
-		<role-name>admin</role-name>
+		<role-name>manage</role-name>
 	</security-role>
 	<security-constraint>
 		<display-name>WebMarket Security_01</display-name>
 		<web-resource-collection>
 			<web-resource-name>WebMarket</web-resource-name>
 			<description></description>
-			<url-pattern>/admin/product_add.jsp</url-pattern>
+			<url-pattern>/admin/index_ad.jsp</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
 			<description>권한 관리자명</description>
-			<role-name>admin</role-name>
+			<role-name>manage</role-name>
 		</auth-constraint>
 	</security-constraint>
 	<login-config>

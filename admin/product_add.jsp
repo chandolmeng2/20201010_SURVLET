@@ -79,7 +79,6 @@
 			<div class="form-group row">
 				<div class="col-sm-offset-2 col-sm-10 ">
 					<input type="submit" class="btn btn-primary" value="등록" onclick="CheckAddProduct()" >
-                    <a href="../login/logout.jsp" class="btn btn-sm btn-success pull-right">로그아웃</a>
 				</div>
 			</div>
 		</form>
