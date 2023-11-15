@@ -9,12 +9,16 @@
 	Cookie country = new Cookie("Shipping_country",	URLEncoder.encode(request.getParameter("country"), "utf-8"));
 	Cookie zipCode = new Cookie("Shipping_zipCode",	URLEncoder.encode(request.getParameter("zipCode"), "utf-8"));
 	Cookie addressName = new Cookie("Shipping_addressName", URLEncoder.encode(request.getParameter("addressName"), "utf-8"));
+	Cookie addressDetail = new Cookie("Shipping_addressDetail", URLEncoder.encode(request.getParameter("addressDetail"), "utf-8"));
+	Cookie addressExtra = new Cookie("Shipping_addressExtra", URLEncoder.encode(request.getParameter("addressExtra"), "utf-8"));
 
 	cartId.setMaxAge(24 * 60 * 60); // 초 단위
 	name.setMaxAge(24 * 60 * 60);
 	zipCode.setMaxAge( 24 * 60 * 60);
 	country.setMaxAge(24 * 60 * 60);
 	addressName.setMaxAge(24 * 60 * 60);
+	addressDetail.setMaxAge(24 * 60 * 60);
+	addressExtra.setMaxAge(24 * 60 * 60);
 
 	response.addCookie(cartId); // 생성된 쿠키 추가
 	response.addCookie(name);
@@ -22,6 +26,8 @@
 	response.addCookie(country);
 	response.addCookie(zipCode);
 	response.addCookie(addressName);
+	response.addCookie(addressDetail);
+	response.addCookie(addressExtra);
 
 	response.sendRedirect("order_confirm.jsp");
 %>
