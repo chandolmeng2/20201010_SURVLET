@@ -2,7 +2,7 @@
 <web-app>
 	<security-role>
 		<description></description >
-		<role-name>manage</role-name>
+		<role-name>admin</role-name>
 	</security-role>
 	<security-constraint>
 		<display-name>WebMarket Security_01</display-name>
@@ -13,7 +13,7 @@
 		</web-resource-collection>
 		<auth-constraint>
 			<description>권한 관리자명</description>
-			<role-name>manage</role-name>
+			<role-name>admin</role-name>
 		</auth-constraint>
 	</security-constraint>
 	<login-config>

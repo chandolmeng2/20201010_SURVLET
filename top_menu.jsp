@@ -26,14 +26,13 @@
 
         <div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="./index.jsp">자동차</a>
+				<a class="navbar-brand" href="./index.jsp">상품목록(기본 홈)</a>
                 <a class="navbar-brand" href="./index.jsp">조립PC</a>
                 <a class="navbar-brand" href="./index.jsp">PC견적</a>
                 <a class="navbar-brand" href="./index.jsp">기업구매상담</a>
                 <a class="navbar-brand" href="./index.jsp">여행</a>
                 <a class="navbar-brand" href="./index.jsp">쇼핑기획전</a>
                 <a class="navbar-brand" href="./index.jsp">DPG</a>
-                <a class="navbar-brand" href="./index.jsp">이벤트/체험단</a>
                 <a class="navbar-brand" href="../admin/index_ad.jsp">관리자모드</a>
 			</div>
 		</div>
