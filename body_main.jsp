@@ -14,6 +14,7 @@
 		</div>
 	</div>
 <%
+    
 	ArrayList<Product> listOfProducts = productDAO.getAllProducts(); // 리스트에 상품 전체 정보를 얻어온다.
 %>
     <div class="container">
