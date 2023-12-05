@@ -3,18 +3,18 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page import="mvc.model.Board_dto"%>
 <%
-    String sessionId = (String) session.getAttribute("JSESSIONID");
-    List boardList = (List) request.getAttribute("boardlist");
-    int total_record = ((Integer) request.getAttribute("total_record")).intValue();
-    int pageNum = ((Integer) request.getAttribute("pageNum")).intValue();
-    int total_page = ((Integer) request.getAttribute("total_page")).intValue();
+   String sessionId = (String) session.getAttribute("JSESSIONID");
+   List boardList = (List) request.getAttribute("boardlist");
+   int total_record = ((Integer) request.getAttribute("total_record")).intValue();
+   int pageNum = ((Integer) request.getAttribute("pageNum")).intValue();
+   int total_page = ((Integer) request.getAttribute("total_page")).intValue();
 %>
 <html>
 <head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <title>고객센터 게시판</title>
 <script type="text/javascript">
    function checkForm() {	
@@ -89,7 +89,9 @@
 		<option value="subject">제목에서</option>
 		<option value="content">본문에서</option>
 		<option value="name">글쓴이에서</option>
-	</select> <input name="text" type="text" /> <input type="submit" id="btnAdd" class="btn btn-primary " value="검색 " />
+	</select> 
+            <input name="text" type="text" /> 
+            <input type="submit" id="btnAdd" class="btn btn-primary " value="검색 " />
            </td>
            <td width="100%" align="right">
 	<a href="#" onclick="checkForm(); return false;" class="btn btn-primary">&laquo;글쓰기</a>
@@ -103,3 +105,4 @@
 <jsp:include page="../footer.jsp" />
 </body>
 </html>
+

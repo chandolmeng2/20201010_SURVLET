@@ -31,9 +31,9 @@ public class Board_dao {
 		String sql;
 		
 		if (items == null && text == null)
-			sql = "select  count(*) from board";
+			sql = "select count(*) from board";
 		else
-			sql = "SELECT   count(*) FROM board where " + items + " like '%" + text + "%'";
+			sql = "SELECT count(*) FROM board where " + items + " like '%" + text + "%'";
 		
 		try {
 			conn = Db_connection.getConnection();

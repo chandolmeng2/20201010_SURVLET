@@ -27,14 +27,13 @@
 	</login-config>  
     
     <servlet>
-        <servlet-name>BoardController</servlet-name>
-        <servlet-class>mvc.controller.Board_controller</servlet-class>
-    </servlet>
-    
-    <servlet-mapping>
-        <servlet-name>BoardController</servlet-name>
-        <url-pattern>*.do</url-pattern>
-    </servlet-mapping>
-    
+		<servlet-name>BoardController</servlet-name>
+		<servlet-class>mvc.controller.Board_controller</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BoardController</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
     
 </web-app>

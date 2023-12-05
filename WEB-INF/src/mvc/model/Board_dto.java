@@ -54,7 +54,6 @@ public class Board_dto {
 		this.content = content;
 	}
 
-
 	public String getRegist_day() {
 		return regist_day;
 	}

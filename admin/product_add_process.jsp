@@ -57,6 +57,7 @@
 	pstmt.setString(8, condition);
 	pstmt.setString(9, fileName);
 	pstmt.executeUpdate(); // 최종 SQL 쿼리 실행	
+
 	if (pstmt != null)
  		    pstmt.close();
  	if (conn != null)
