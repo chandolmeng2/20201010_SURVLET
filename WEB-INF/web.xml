@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
+    
+    <error-page>
+		<error-code>404</error-code>
+		<location>/exception/main_server_downtime.jsp</location>
+	</error-page>
+    
 	<security-role>
 		<description></description >
-		<role-name>admin</role-name>
+		<role-name>manage</role-name>
 	</security-role>
 	<security-constraint>
 		<display-name>WebMarket Security_01</display-name>
@@ -15,7 +21,7 @@
 		</web-resource-collection>
 		<auth-constraint>
 			<description>권한 관리자명</description>
-			<role-name>admin</role-name>
+			<role-name>manage</role-name>
 		</auth-constraint>
 	</security-constraint>
 	<login-config>
