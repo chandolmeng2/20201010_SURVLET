@@ -113,9 +113,9 @@ Board_dao.java 생성하여 게시판 조회, 수정, 삭제 등을 sql 통해 �
 WEB-INF/src/mvc/controller 폴더 생성하고Board_controller.jsp 생성하여 전체적인 게시판 기능을 제어하는 역할 구현
 servelet-api.jar, jstl-1.2.jar 라이브러리 연동
 board 폴더 생성하고 
-1. 실질적으로 보여지는 board_list.jsp 생성 
-2. 게시판 글을 작성하는 board_writeform.jsp 생성
-3. 글에 대한 상세 정보를 보여주는 board_view.jsp 생성 
+실질적으로 보여지는 board_list.jsp 생성 
+게시판 글을 작성하는 board_writeform.jsp 생성
+글에 대한 상세 정보를 보여주는 board_view.jsp 생성 
 #### 연습문제
 게시판을 접속하면 login 폴더 안에 login_user.jsp로 넘어가게 되고 
 member 폴더 안에 member_join.jsp와 member_join_process.jsp 생성하여 회원가입을 해서 그 정보가 table member 안으로 들어가도록 구현
