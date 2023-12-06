@@ -34,7 +34,6 @@ ProductRepository.java에서 상품 코드를 리턴 받는 메소드 추가하�
 body_main.jsp에서 보이는 상품 밑에 '상품 상세 정보'를 클릭하면 해당 상품 상세 페이지로 이동<br/>
 product_detail.jsp 파일 생성하고 상품 상세 정보를 request 메서드로 받도록 구현<br/>
 product_not_found.jsp 파일 생성하여 잘못된 코드를 입력하면 출력되게 구현<br/>
-https://jsp--mmxat.run.goorm.site/product_detail.jsp?id=P1232<br/>
 위 주소로 가면 product_not_found.jsp 출력<br/>
 #### 연습문제
 web.xml에 <error page> 추가하여 에러 페이지 구현<br/>
