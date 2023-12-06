@@ -33,7 +33,7 @@ ProductRepository.java에서 상품 코드를 리턴 받는 메소드 추가하�
 body_main.jsp에서 보이는 상품 밑에 '상품 상세 정보'를 클릭하면 해당 상품 상세 페이지로 이동<br/>
 product_detail.jsp 파일 생성하고 상품 상세 정보를 request 메서드로 받도록 구현<br/>
 product_not_found.jsp 파일 생성하여 잘못된 코드를 입력하면 출력되게 구현<br/>
-'https://jsp--mmxat.run.goorm.site/product_detail.jsp?id=P1232'<br/>
+https://jsp--mmxat.run.goorm.site/product_detail.jsp?id=P1232<br/>
 위 주소로 가면 product_not_found.jsp 출력<br/>
 #### 연습문제
 web.xml에 <error page> 추가하여 에러 페이지 구현
@@ -46,6 +46,7 @@ top_menu_ad.jsp에 상품 등록 링크 추가<br/>
 product_add.jsp 생성하여 폼 받아서 post 방식으로 보내는 기능 구현<br/>
 product_add_process.jsp 생성하여 post 방식으로 받은 정보를 저장하도록 구현<br/>
 ProductRepository.java에서 정보를 추가적으로 저장할 수 있도록 클래스 변수를 인스턴스 변수로 변경<br/>
+#### 연습문제
 위의 파일들 수정해서 상품 이미지도 업로드 가능하게 수정(cos.jar 라이브러리 추가)
 
 ## 9주차
