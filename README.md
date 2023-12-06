@@ -126,6 +126,8 @@ board 폴더 생성하고<br/>
 게시판을 접속하면 login 폴더 안에 login_user.jsp로 넘어가게 되고 <br/>
 member 폴더 안에 member_join.jsp와 member_join_process.jsp 생성하여 <br/>
 회원가입을 해서 그 정보가 table member 안으로 들어가도록 구현<br/>
+회원가입 할 때 생년월일 datepickup으로 날짜 클릭하여 정하고,<br/> 
+mail은 naver, gmail, nate, sungkyul 중 선택하여 메일 입력하도록 구현<br/>
 또한, login_user_process.jsp 파일로 table member 안에 있는 계정으로 로그인할 수 있도록 구현<br/>
 ##### 구현 실패
 14주차 게시판 만들기에서 게시판에 들어가는 것까지 구현이 되었으나 글을 작성하는 기능부터 실행되지 않는 문제가 있음

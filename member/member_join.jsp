@@ -6,6 +6,13 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type = "text/javascript" src = "../js/validation.js"></script>
+    
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> <!---jQuery 사용하여 날짜 선택 기능 추가--->
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script> <!---우편번호 및 주소--->
+    
     <title>회원가입</title>
 </head>
 <body>
@@ -50,16 +57,46 @@
                     </select>
 				</div>
 			</div>
+            
             <div class="form-group row">
 				<label class="col-sm-2">생년월일</label>
 				<div class="col-sm-3">
-					<input type="text" id="birth" name="birth" class="form-control" >
+                    <script>
+                 $( function() {
+                     $( "#birth" ).datepicker({
+                       dateFormat: 'yy-mm-dd' //달력 날짜 형태
+                       ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
+                       ,showMonthAfterYear:true // 월- 년 순서가아닌 년도 - 월 순서
+                       ,changeYear: true //option값 년 선택 가능
+                       ,changeMonth: true //option값  월 선택 가능                
+                       ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
+                       ,buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif" //버튼 이미지 경로
+                       ,buttonImageOnly: true //버튼 이미지만 깔끔하게 보이게함
+                       ,buttonText: "선택" //버튼 호버 텍스트              
+                       ,yearSuffix: "년" //달력의 년도 부분 뒤 텍스트
+                       ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
+                       ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip
+                       ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 텍스트
+                       ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 Tooltip
+                       ,maxDate: "-1d" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)  
+                   });
+                     $( "#birth" ).datepicker("setDate","today");
+                 } );
+                    </script>
+					<input type="text" id="birth" name="birth" class="form-control" placeholder="yyyy-mm-dd">
 				</div>
 			</div>
+            
 			<div class="form-group row">
 				<label class="col-sm-2">메일주소</label>
 				<div class="col-sm-3">
-					<input type="text" id="mail" name="mail" class="form-control" >
+					<input type="text" id="mail_1" name="mail_1" class="form-control" >
+                    <select name="mail_2" class="form-control">
+                        <option value="@naver.com">@naver.com</option>
+                        <option value="@gmail.com">@gmail.com</option>
+                        <option value="@nate.com">@nate.com</option>
+                        <option value="@sungkyul.ac.kr">@sungkyul.ac.kr</option>
+                    </select>
 				</div>
 			</div>
 			<div class="form-group row">
