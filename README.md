@@ -4,7 +4,8 @@
 ## 기본설명
 구름IDE를 통해 JSP 페이지를 만들고, <br/>
 데이터베이스와 웹 브라우저 사이에서 데이터 처리를 하는 서블릿 설계하여 쇼핑몰 사이트 구현<br/>
-모든 이미지 파일의 위치는 admin 폴더 내에 있는 image 폴더 안에 존재
+기본적인 이미지 파일의 위치는 admin 폴더 내에 있는 image 폴더 안에 존재<br/>
+특별하게 구현된 것은 screenshot 폴더 내에 사진 파일로 확인 가능
 
 ## 2주차
 ### 메인 페이지(index.jsp) 생성
@@ -36,7 +37,8 @@ product_not_found.jsp 파일 생성하여 잘못된 코드를 입력하면 출�
 https://jsp--mmxat.run.goorm.site/product_detail.jsp?id=P1232<br/>
 위 주소로 가면 product_not_found.jsp 출력<br/>
 #### 연습문제
-web.xml에 <error page> 추가하여 에러 페이지 구현
+web.xml에 <error page> 추가하여 에러 페이지 구현<br/>
+(screenshot 폴더 내에 error_page.png로 확인 가능)
 
 ## 7주차
 ### 상품 등록하기
@@ -84,7 +86,8 @@ order_confirm.jsp에서 취소를 누르면 order_cancelled.jsp로 넘어가도�
 배송일 날짜를 jQuery를 활용하여 datepickup으로 클릭하여 <br/>
 날짜 선택하게 설정(당일 이전은 선택할 수 없게 설계)<br/>
 국가명 한국, 중국, 일본, 미국 4 국가 중 select 박스로 선택하도록 설정<br/>
-우편번호 찾기를 클릭하고 주소를 입력하면 자동으로 우편번호를 찾을 수 있게 구현
+우편번호 찾기를 클릭하고 주소를 입력하면 자동으로 우편번호를 찾을 수 있게 구현<br/>
+(screenshot 폴더 내에 order_info.png로 확인 가능)
 
 ## 12주차
 ### DB 연동하기
@@ -106,7 +109,8 @@ product_update_process.jsp 생성하여 상품 수정된 정보를 DB에 수정�
 #### 연습문제
 product_delete.jsp를 생성하여 삭제할 상품을 DB에 삭제되도록 구현<br/>
 (product_edit.jsp에서 삭제 메뉴를 클릭하여 product_delete.jsp로 이동)<br/>
-상품 삭제되면 다시 product_edit.jsp로 이동(delete 모드)
+상품 삭제되면 다시 product_edit.jsp로 이동(delete 모드)<br/>
+(screenshot 폴더 내에 product_delete.png로 확인 가능)
 
 ## 14주차
 ### 게시판 만들기
@@ -129,5 +133,6 @@ member 폴더 안에 member_join.jsp와 member_join_process.jsp 생성하여 <br
 회원가입 할 때 생년월일 datepickup으로 날짜 클릭하여 정하고,<br/> 
 mail은 naver, gmail, nate, sungkyul 중 선택하여 메일 입력하도록 구현<br/>
 또한, login_user_process.jsp 파일로 table member 안에 있는 계정으로 로그인할 수 있도록 구현<br/>
+(screenshot 폴더 내에 login_user.png와 join_member.png로 확인 가능)
 ##### 구현 실패
 14주차 게시판 만들기에서 게시판에 들어가는 것까지 구현이 되었으나 글을 작성하는 기능부터 실행되지 않는 문제가 있음
